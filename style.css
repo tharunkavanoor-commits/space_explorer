@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #070b1f;
+    color: white;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 45px 20px 30px;
+    background: linear-gradient(135deg, #10194a, #24104f);
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #cbd5ff;
+    font-size: 17px;
+}
+
+main {
+    width: min(1000px, 92%);
+    margin: 35px auto;
+}
+
+.search-box {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    background: #111735;
+    padding: 22px;
+    border-radius: 16px;
+    margin-bottom: 30px;
+}
+
+.search-box label {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5px;
+    color: #cbd5ff;
+}
+
+input {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px 22px;
+    border: none;
+    border-radius: 8px;
+    background: #5b7cfa;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #4565df;
+}
+
+.loading {
+    text-align: center;
+    color: #aebcff;
+    display: none;
+}
+
+.space-card {
+    background: #111735;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.35);
+}
+
+.space-card img,
+.space-card iframe {
+    display: block;
+    width: 100%;
+    max-height: 600px;
+    border: none;
+    object-fit: cover;
+}
+
+.content {
+    padding: 28px;
+}
+
+.content h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.date {
+    color: #91a6ff;
+    margin-bottom: 20px;
+}
+
+.content p {
+    color: #d8dcf2;
+    line-height: 1.7;
+}
+
+.error {
+    color: #ff8d8d;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #8e96b8;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 32px;
+    }
+
+    .content h2 {
+        font-size: 23px;
+    }
+
+    input,
+    button {
+        width: 100%;
+    }
+}
